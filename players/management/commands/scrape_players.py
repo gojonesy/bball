@@ -4,7 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 
 from players.models import Player
-from players.utils import rename_players, create_players, remove_created_teams
+#from players.utils import create_players, remove_created_teams
 
 from django.core.management.base import BaseCommand
 
@@ -36,6 +36,6 @@ class Command(BaseCommand):
 				print('created player: {0}, {1}'.format(info.text, position))
 
 
-		rename_players()
-		create_players()
-		remove_created_teams()
+		#rename_players()
+		#create_players()
+		#remove_created_teams()
